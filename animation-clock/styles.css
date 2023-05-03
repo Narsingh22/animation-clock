@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clock {
+    width: 80vw;
+    height: 80vh;
+    margin: 50px auto;
+    border: 2px solid;
+    border-radius: 50%;
+    position: relative;
+    background-color: bisque;
+}
+
+.clock p {
+    position: absolute;
+    font-size: 80px;
+}
+
+p#twelve {
+    left: 330px;
+    bottom: 520px;
+}
+
+p#three {
+    left: 680px;
+    top: 220px;
+}
+
+p#six {
+    left: 350px;
+    top: 520px;
+}
+
+p#nine {
+    top: 220px;
+    left: 30px;
+}
+
+p#second-hand {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: black;
+    border-radius: 50%;
+    margin: 44% 48%;
+    animation: seconds 60s linear infinite ;
+}
+
+@keyframes seconds {
+    0% {
+        transform: rotate(-180deg);
+    }
+
+    25% {
+        transform: rotate(-90deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(90deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
