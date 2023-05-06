@@ -5,7 +5,7 @@ body {
 }
 
 .clock {
-    width: 80vw;
+    width: 50vw;
     height: 80vh;
     margin: 50px auto;
     border: 2px solid;
@@ -18,26 +18,31 @@ body {
 .clock p {
     position: absolute;
     font-size: 80px;
+    margin: 10px;
 }
 
 p#twelve {
-    left: 330px;
-    bottom: 520px;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
 }
 
 p#three {
-    left: 680px;
-    top: 220px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 p#six {
-    left: 350px;
-    top: 520px;
+    left: 49%;
+    bottom: 0;
+    transform: translateX(-50%);
 }
 
 p#nine {
-    top: 220px;
-    left: 30px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 p#second-hand {
@@ -47,7 +52,9 @@ p#second-hand {
     text-align: center;
     background-color: black;
     border-radius: 50%;
-    margin: 44% 48%;
+    top: 47%;
+    left: 48%;
+    transform: translate(-50%, -50%);
     animation: seconds 60s linear infinite;
 }
 
@@ -57,7 +64,9 @@ p#second-hand2 {
     text-align: center;
     background-color: black;
     border-radius: 50%;
-    margin: 44% 48%;
+    top: 47%;
+    left: 48%;
+    transform: translateX(-50%, -50%);
     animation: seconds 60s linear infinite;
 }
 
@@ -68,9 +77,12 @@ p#second-hand3 {
     text-align: center;
     background-color: black;
     border-radius: 50%;
-    margin: 44% 48%;
+    top: 47%;
+    left: 48%;
+    transform: translate(-50%, -50%);
     animation: seconds 60s linear infinite;
 }
+
 
 .clock:hover {
     animation: seconds linear infinite;
